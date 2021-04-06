@@ -1,0 +1,91 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <center>
+        <h1>Good Vibes Form</h1>
+    </center>
+    <div class="formdiv">
+        <center>
+            <p>Tell us something positive that happened to you today</p>
+            <p class="error"><%=errmessage%></p>
+            <p class="success"><%=succmessage%></p>
+        </center>
+        <form action="/postsurvey" method="POST">
+            <div class="left">
+                <label for="name">Name:<p class="mandatory">*</p></label>
+            </div>
+            <div class="right">
+                <input id="name" name="name" type="text" placeholder="enter your name" value="<%=data.name%>"/>
+            </div>
+
+
+            <div class="left">
+                <label for="email">Email:<p class="mandatory">*</p></label>
+            </div>
+            <div class="right">
+                <input id="email" name="email" type="text" placeholder="enter your email" value="<%=data.email%>"/>
+            </div>
+
+
+            <div class="left">
+                <label>On scale of 1-10, how good was it?<p class="mandatory">*</p></label>
+            </div>
+            <div class="right">
+                <input id="scale" name="scale" type="number" placeholder="enter a number between 1 to 10" value="<%=data.scale%>"/>
+            </div>
+
+
+            <div class="left"><label>Where did it happen?<p class="mandatory">*</p></label>
+            </div>
+            <div class="right">
+                <select name="place" id="place" value="<%=data.place%>">
+                    <option value="At Home">At Home</option>
+                    <option value="At Office">At Office</option>
+                    <option value="At Park">At Park</option>
+                </select>
+            </div>
+
+            
+            <div class="left">
+                <label>At what time of the day did it happen? <p class="mandatory">*</p></label>
+            </div>
+            <div class="right">
+                
+                <label for="Morning" class="input-radio"><input type="radio" name="time" id="Morning" value="Morning"> Morning</label>               
+                <label for="Afternoon" class="input-radio"><input type="radio" name="time" id="Afternoon" value="Afternoon"> Afternoon</label>
+                <label for="Evening" class="input-radio"><input type="radio" name="time" id="Evening" value="Evening"> Evening</label>
+            </div>
+
+
+            <div class="left">
+                <label>What emotion did you experience?<p class="mandatory">*</p></label>
+            </div>
+            <div class="right">
+                
+                <label for="Excited" class="input-checkbox"><input type="checkbox" name="emotion" id="Excited" value="Excited"> Excited</label>         
+                <label for="Humbled" class="input-checkbox"><input type="checkbox" name="emotion" id="Humbled" value="Humbled"> Humbled</label>  
+                <label for="Elated" class="input-checkbox"><input type="checkbox" name="emotion" id="Elated" value="Elated"> Elated</label>       
+                <label for="Loved" class="input-checkbox"><input type="checkbox" name="emotion" id="Loved" value="Loved"> Loved</label>
+                <label for="Enthusiastic" class="input-checkbox"><input type="checkbox" name="emotion" id="Enthusiastic" value="Enthusiastic"> Enthusiastic</label>
+            </div>
+            <div class="left">
+                <label id="textarealabel" for="name">Please describe your positive experience: <p class="mandatory">*</p></label>
+            </div>
+            <div class="right">
+                <textarea name="description" rows="2" cols="29" id="experience" type="text" placeholder="enter your experience here"><%=data.description%></textarea>
+            </div>
+            <center>
+                <button id="submitbtn" type="submit">Submit</button>
+            </center>
+        </form>
+        <center><button id="downloadbtn" onclick="window.location.href='/getdata'">Download All Data</button></center>
+        
+    </div>    
+</body>
+</html>
