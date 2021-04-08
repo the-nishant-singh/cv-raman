@@ -1,0 +1,37 @@
+body {
+  background-color: skyblue;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.anothercontainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cc {
+  padding: 10px;
+  color: red;
+  background-color: yellow;
+}
+
+.assignments {
+  padding: 10px;
+  color: red;
+  background-color: yellow;
+}
+
+.part1, .part2 {
+  background-color: red;
+  padding: 10px;
+  color: white;
+}
+
+.part2 {
+  background-color: green;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,42 @@
+@import "./variables";
+
+@mixin flex($justify){
+    display: flex;
+    justify-content: $justify;
+}
+
+$elements : cc, assignments;
+
+body{
+    background-color: $background-color;
+}
+
+
+.container{
+    @include flex(space-around)
+}
+
+
+.anothercontainer{
+    @include flex(space-between)
+}
+
+@each $element in $elements{
+    .#{$element}{
+        padding: 10px;
+        color: $text-color;
+        background-color: yellow;
+    }
+}
+
+
+.part1{
+    background-color: red;
+    padding: 10px;
+    color: white;;
+}
+
+.part2{
+    @extend .part1;
+    background-color: green;
+}
