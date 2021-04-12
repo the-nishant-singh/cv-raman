@@ -1,0 +1,58 @@
+body {
+    background-color: powderblue;
+    padding: 50px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.container {
+    width: 50%;
+    margin: auto;
+    border: 1px solid #ccc;
+    padding: 20px 50px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#todo__input{
+    width: 75%;
+    height: 42px;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.add__button{
+    width: 20%;
+    height: 46px;
+    font-weight: 700;
+    color: white;
+    border-radius: 5px;
+    background-color: rgb(40, 90, 230);
+    border: 1px solid rgb(40, 90, 230);
+}
+
+.form__group{
+    margin-bottom: 20px;
+}
+
+
+.lists{
+    list-style: none;
+}
+
+.item__text{
+    font-weight: 600;
+}
+
+.checkbox{
+    margin-right: 20px;
+}
+
+ul { 
+    display: flex;
+    flex-direction: column-reverse;
+}
