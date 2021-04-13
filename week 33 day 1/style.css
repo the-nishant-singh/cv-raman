@@ -1,0 +1,23 @@
+body{
+    padding: 50px
+}
+
+
+#container{
+    border: 2px solid #ccc;
+    margin: auto;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.profile{
+    width: 25%;
+    padding: 10px;
+}
+
+.images{
+    width: 100%;
+    height: auto
+}
