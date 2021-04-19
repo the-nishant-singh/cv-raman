@@ -1,0 +1,17 @@
+#container{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border: 2px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.color__card{
+    height: 150px;
+    width: 150px;
+    border-radius: 5px;
+}
