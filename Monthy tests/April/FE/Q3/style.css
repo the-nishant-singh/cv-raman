@@ -1,0 +1,19 @@
+nav {
+  font-size: 14px;
+  font-weight: bold;
+  float: left;
+}
+nav ul {
+  list-style-type: none;
+}
+nav ul li {
+  float: left;
+  margin: 2px;
+}
+nav ul li a {
+  text-decoration: none;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+}
+

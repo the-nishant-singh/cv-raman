@@ -1,0 +1,20 @@
+nav {
+  font: {
+    size: 14px;
+    font-weight: bold;
+  }
+  float: left;
+  ul {
+    list-style-type: none;
+    li {
+      float: left;
+      margin: 2px;
+      a {
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
