@@ -1,0 +1,40 @@
+.App {
+  padding: 50px;
+  font-family: "Lato", sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  border: 2px solid #ccc;
+  width: 300px;
+  height: 400px;
+  padding: 0 20px;
+  position: relative;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.price {
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+  color: green;
+  background-color: white;
+  padding: 5px;
+}
+
+.card__data {
+  position: absolute;
+  top: 0;
+  color: Cyan;
+  text-shadow: 2px 2px 8px black;
+}
+
+.image {
+  position: absolute;
+  height: 100%;
+  max-width: 300px;
+  right: 0;
+}
